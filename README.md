@@ -7,34 +7,39 @@ Prerequisites :
 -> Before you launch the CFN, you must have an existing Amazon Connect instance with the live media streaming feature activated
 ->https://docs.aws.amazon.com/connect/latest/adminguide/enable-live-media-streams.html
 
-Deploy Stack :  https://solutions-reference.s3.amazonaws.com/ai-powered-speech-analytics-for-amazon-connect/latest/ai-powered-speech-analytics-for-amazon-connect.template
+Deploy Stack :  /deployment/AI-powered-speech-analytics-for-amazon-connect.yaml
 -> REGION us-east-1
 
 Create number
 -> https://docs.aws.amazon.com/connect/latest/adminguide/contact-center-phone-number.html
 
 
-Upload FLows
-->
+Override the deployed contact FLows
+-> /source/SPBAmazonconnectFlow
+-> https://docs.aws.amazon.com/connect/latest/adminguide/contact-flow-import-export.html
 
 Attach Phone Number to Flow
-->
+->https://docs.aws.amazon.com/connect/latest/adminguide/associate-phone-number.html
+
 Authorize https://dp95po3q13k1c.cloudfront.net/ has Amazon connect origin
 -> cp /source/web_site_SPB ( add some custom FR source code)
--> Update img
-Deploy the new SPB interface (aws s3 cp . s3://new-website-bucket-name-spbcc/CCP/ --recursive)
-Disable Geo restriction on CloudFront distribution
+-> Update imgs
+
+Deploy your custom new web interface
+-> aws s3 cp . s3://new-website-bucket-name-spbcc/CCP/ --recursive
+-> Disable Geo restriction on CloudFront distribution
 
 Update lambda function source code ( add some custom FR source code )
--> build artefacrs
+-> build all lambda artefacts ( see instructions below )
 -> cd /deployment/regional-s3-assets
 -> export AWS_REGION=us-east-1 / aws lambda update-function-code --function-name  spbcc-kvsConsumerTrigger-8RGYHUM71U1V  --zip-file fileb://kvs_trigger.zip
 
 Update the lambda ARN in flows
--> Update for the 2 contacts flow the new lambdas ARN references 
+-> Update for the 2 contacts flow the new lambdas ARN references
+-> agentWhisperKvsStreamingSampleFlowFR & kvsStreamingFlowFR
 
-Create intent Lex ( Bot FAQs )
-->
+Create your Lex intent ( Bot FAQs )
+-> Update the kvsStreamingFlowFR accordingly
 
 you're ready to test, Let's go !
 
