@@ -23,7 +23,8 @@ Attach Phone Number to Flow
 
 Authorize https://dp95po3q13k1c.cloudfront.net/ has Amazon connect origin
 -> cp /source/web_site_SPB ( add some custom FR source code)
--> Update imgs
+-> Update imgs agentAssist.html
+-> Update agentAction keyPhrase to match your context
 
 Deploy your custom new web interface
 -> aws s3 cp . s3://new-website-bucket-name-spbcc/CCP/ --recursive
