@@ -1,0 +1,719 @@
+
+
+
+/*  1 ----------------------  forum list backgrounds --------------------------*/
+	
+	 
+
+	
+	
+
+ 
+/*  2 ----------------------  headers backgrounds --------------------------*/
+
+	
+	  
+/*  3 ----------------------  Font - Forum headings --------------------------*/
+ 
+	 
+	 
+			
+	
+/*  4 ----------------------  Font - breadcrumb --------------------------*/
+ 
+	 
+	 
+	  
+	 
+/*  5 ----------------------  Font - links --------------------------*/
+ 
+	 
+	 
+ 
+	
+/*  6 ----------------------  Font - Forum and category lists --------------------------*/
+ 
+		
+	 
+	
+/*  7 ----------------------  Font - Sub Forum lists --------------------------*/
+ 
+	 
+	 
+	 
+/*  8 ----------------------  Font - forum description --------------------------*/
+ 
+/*Note we also set bsp-forum-content as if add descriptions are set in forum display, then we need to replicate these settings */ 
+  
+	 
+	 
+	 
+			 
+
+/*  9 ----------------------  Font - Freshness --------------------------*/
+ 
+	 
+
+ 
+	 
+	 
+/*  10 ----------------------  Font - Freshness Author--------------------------*/
+ 
+	 
+	 
+				 
+ 
+/*  11 ----------------------  Forum boarder --------------------------*/
+ 
+					
+		#bbpress-forums #bbp-user-wrapper ul.bbp-lead-topic, #bbpress-forums #bbp-user-wrapper ul.bbp-topics, #bbpress-forums #bbp-user-wrapper ul.bbp-replies {
+    clear: both;
+}
+		
+
+/*   12 ----------------------  Font - topic count --------------------------*/
+ 
+	 
+	 
+	 
+	
+/*  13 ----------------------  Font - Post counts --------------------------*/
+ 
+	 
+	 
+	 
+	
+ 
+/*****************************************************************************_________________TOPIC INDEX___________________________________________*/ 
+
+/*  1 ----------------------  Font - pagination --------------------------*/
+ 
+	 
+	 
+	 
+	
+
+/*  2 ----------------------  Font - voice/post count --------------------------*/
+ 
+	 
+	 
+	 
+	
+/*  3 ----------------------  topic title Font - links --------------------------*/
+ 
+	 
+	 
+	/*  4 ----------------------  Font - Topic Title --------------------------*/
+ 
+	 
+	 
+	 
+/*   5 ----------------------  Font - template notice --------------------------*/
+ 
+	 
+	 
+	 
+	
+/*  6 ----------------------  Font - template background --------------------------*/
+ 
+	 
+/*  7 ----------------------  Font - template border --------------------------*/
+ 
+	
+/*  8 ----------------------  Font - Started by --------------------------*/
+ 
+	 
+	 
+	 
+			
+/*  9 ----------------------  sticky/super sticky background --------------------------*/
+
+	
+	
+/*  10. ----------------------  Font - forum info notice (also does topic info)--------------------------*/
+ 
+	 
+	 
+	 
+	
+/* 11 ----------------------  Font - forum info background  (also does topic info)--------------------------*/
+ 
+	 
+/*  12 ----------------------  Font - forum info border  (also does topic info)--------------------------*/
+ 
+	 
+/*   13 ----------------------  Topic Index headings font --------------------------*/
+ 
+	 
+	 
+	 
+				 
+/*******************************************************************************************_________________TOPIC/REPLY___________________________________________*/ 
+
+/*   1 ----------------------topic/reply backgrounds   --------------------------*/
+
+				#bbpress-forums div.odd
+			{
+				background-color: #fff ;
+			}
+		
+				#bbpress-forums div.even
+			{
+				background-color: #fbfbfb ;
+			}
+		 
+/*   2 ----------------------  Topic/reply header background --------------------------*/
+ 
+				#bbpress-forums div.bbp-reply-header,
+			#bbpress-forums div.bbp-topic-header
+			{
+				background-color: #f4f4f4 ;
+			}
+				 
+/*   3 ----------------------  Trash/Spam backgrounds --------------------------*/
+ 
+				#bbpress-forums .status-trash.odd,
+			#bbpress-forums .status-spam.odd 
+			{
+				background-color: #fdd ;
+			}
+		
+				#bbpress-forums .status-trash.even,
+			#bbpress-forums .status-spam.even
+			{
+				background-color: #fee ;
+			}
+		 
+/*   4 ----------------------  Closed Topic backgrounds --------------------------*/
+ 
+				#bbpress-forums .status-closed,
+			#bbpress-forums .status-closed a
+			{
+				background-color: #fdd ;
+			}
+		 
+/*   5 ----------------------  Font - topic/reply date --------------------------*/
+
+	 
+	 
+	 
+	
+/*   6 ----------------------  Font - topic/reply text --------------------------*/
+ 
+
+	 
+	 
+	 
+	 
+/*   7 ----------------------  Font - Author name --------------------------*/
+ 
+	 
+	 
+			
+/*   8 ----------------------  Font - reply permalink --------------------------*/
+ 
+	 
+
+ 
+	 
+	 
+/*   9 ----------------------  Font - author role --------------------------*/
+ 
+	 
+	 
+	 
+	 
+/*   10 ----------------------  Topic Header --------------------------*/
+ 
+	 
+	 
+	 
+				 
+ 
+/*   11 ----------------------  Topic Admin Links --------------------------*/
+ 
+	 
+	 
+	 
+		
+/*   13 ----------------------  @mentions --------------------------*/
+ 
+	 
+		
+	 
+		
+/* ***********************************************************************************_________________TOPIC REPLY FORM___________________________________________*/ 
+ 
+/*   1 ----------------------  Topic/reply Labels --------------------------*/
+ 
+	 
+	 
+	 
+	 
+/* 2 ----------------------  Text area background --------------------------*/
+ 
+			 
+/*   3 ----------------------  Text area font --------------------------*/
+ 
+	 
+	 
+	 
+				 
+/*   4 ----------------------  button background --------------------------*/
+
+	 
+	 
+/*   1 ----------------------  topic posting rules --------------------------*/
+ 
+	 
+	 
+
+ 
+	 
+	 
+	 
+	 
+/* ********_________________Forum Display___________________________________________*/ 
+ 
+/*   1 ----------------------  Remove Forum Description --------------------------*/
+				div.bbp-template-notice.info
+			{
+				display: none;
+			}
+		
+ 
+/* ********_________________LATEST ACTIVITY WIDGET___________________________________________*/ 
+ 
+/*   2 ----------------------  Widget title --------------------------*/
+ 
+	 
+			 
+	 
+	
+/*   2 ----------------------  topic/reply title --------------------------*/
+ 
+	 
+ 
+	 
+	 
+ /*   3 ----------------------  Text font --------------------------*/
+ 
+	 
+	 
+	 
+	 
+/*   4 ----------------------  Topic author Font --------------------------*/
+ 
+	 
+
+	 
+	 
+/*   5 ----------------------  Freshness Font--------------------------*/
+ 
+	 
+	 
+	 
+	 
+/*   6 ----------------------  Forum Font --------------------------*/
+ 
+	 
+  
+	 
+	
+/*   7 ----------------------  Topic-reply links --------------------------*/
+ 
+	 
+	 
+	 
+/* ********_________________FORUM DISPLAY___________________________________________*/ 
+ 
+/* ----------------------  Move breadcrumb --------------------------*/
+	 
+ 
+/* ----------------------  forum description styling --------------------------*/
+ 
+		#bbpress-forums div.bsp-forum-content
+		{
+		clear:both;
+		margin-left: 0px ;
+		padding: 0 0 0 0 ;
+		}
+	
+/* ----------------------  Rounded corners --------------------------*/
+ 
+	
+/*----------------------  thumbnails on forum lists --------------------------*/
+ 
+	/*----------------------------------------- ROLES--------------------------------------------------------------------*/
+
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+			 
+				 
+				 
+				
+/*----------------------  Create new topic link styling--------------------------*/
+/*styles the element if it is set */
+
+			.bsp-new-topic
+			{
+				text-align: center;
+			}
+
+
+/*----------------------  Create new topic button Button--------------------------*/
+
+				.bsp_button1
+			{
+				font-size:  10px !important;
+				
+			}
+		
+
+				.bsp_button1 {
+				font-family: Arial;
+			}
+		
+				.bsp_button1
+			{
+				color: #ffffff !important ;
+			}
+		
+				.bsp_button1
+			{
+				background: #3498db;
+				background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+				background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+				background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+				background-image: -o-linear-gradient(top, #3498db, #2980b9);
+				background-image: linear-gradient(to bottom, #3498db, #2980b9);
+			}
+		
+				.bsp_button1:hover
+			{
+				background: #3cb0fd;
+				background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+				background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+				background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+				background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+				background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+			}
+		
+					.bsp_button1
+				{
+					Font-weight:  normal ; 
+				}
+		
+		.bsp_button1
+		{  
+			-webkit-border-radius: 28;
+			-moz-border-radius: 28;
+			border-radius: 28px;
+			padding: 7px 15px 7px 15px;
+			text-decoration: none;  
+			border : none ;
+			cursor : pointer ;
+			line-height : 15px !important;
+		}
+
+		.bsp_button1:hover
+		{
+		   text-decoration: none;
+		}
+
+		.bsp-center
+		{
+			width: 100%;
+			max-width: 100%;
+			float: none;
+			text-align: center;
+			margin-top: 20px;
+		}
+	
+		.bsp-one-half
+		{
+			float: left;
+			width: 48%;
+			margin-right: 4%;
+		}
+
+		.bsp-one-third
+		{
+			width: 30.66%;
+			float: left;
+			margin-right: 4%;
+			position: relative;
+		}
+		
+		
+		/* stack if on mobile */
+		@media only screen and (max-width: 480px) {
+			 .bsp-center
+			 {
+			 clear:both;
+			 width: 100%;
+			 max-width: 100%;
+			 float: left;
+			 text-align: left;
+			 margin-top: 10px;
+			 margin-bottom : 10px ;
+			 }
+
+			.bsp-one-half
+			 {
+			 float: left;
+			 width: 48%;
+			 margin-right: 4%;
+			 }
+
+			.bsp-one-third
+			 {
+			 width: 30.66%;
+			 float: left;
+			 margin-right: 4%;
+			 position: relative;
+			 }
+		}
+
+
+/* /////////////////////////to get the spinner.gif loaded before submit executes */
+		#bsp-spinner-load
+		{
+			background: url(/wp-admin/images/spinner.gif) no-repeat;
+			display : none ;
+		}
+
+		.bsp-spinner
+		{		 
+			background: url(/wp-admin/images/spinner.gif) no-repeat;
+			-webkit-background-size: 20px 20px;
+			background-size: 20px 20px;
+			float: right;
+			opacity: 0.7;
+			filter: alpha(opacity=70);
+			width: 20px;
+			height: 20px;
+			margin: 2px 5px 0;
+		}
+
+
+		#bsp_topic_submit
+		{
+			display : none ;
+		}
+
+		#bsp_reply_submit
+		{
+			display : none ;
+		}
+
+
+/* /////////////////////////and support for search spinner*/
+
+		#bsp_search_submit2
+		{
+			display : none ;
+		}
+
+		.bsp-search-submitting
+		{
+			font-size : 16px ;
+			line-height : 24px ;
+		
+		}
+
+		
+/*   search styling--------------------------*/
+
+			/*search content */
+
+			
+			
+	
+			#bbp_search 
+			{			
+			line-height:  13px !important;
+			}	
+		
+			
+			#bbp_search 
+			{
+				font-size:  13px !important;
+			}	 
+		
+
+			
+		
+
+		
+			#bbp_search 
+			{
+				color: #333333 !important;
+			}	 
+				
+		
+			
+		/*search box */
+	
+					#bbp_search_submit, #bsp_search_submit1, #bsp_search_submit2
+			{			
+			background-color:  #ffffff !important ;
+			}	
+				
+			
+	
+			#bbp_search_submit, #bsp_search_submit1, #bsp_search_submit2
+			{			
+			line-height:  13px !important;
+			}	
+		
+			
+			#bbp_search_submit, #bsp_search_submit1, #bsp_search_submit2
+			{
+				font-size:  13px !important;
+			}	 
+		
+
+			
+		
+
+		
+			#bbp_search_submit, #bsp_search_submit1, #bsp_search_submit2
+			{
+				color: #ffffff !important;
+			}	 
+				
+		
+					#bbp_search_submit, #bsp_search_submit1, #bsp_search_submit2
+				{
+					Font-weight:  bold !important; 
+				}
+					
+		
+/*----------------------  pin for stickies-----------------------------------------------------------------------------------------------------*/
+
+	
+/*----------------------  Breadcrumb home icon-----------------------------------------------------------------------------------------------------*/
+
+		.bsp-home-icon::before
+		{
+			content: "";
+			display: inline-block;
+			font-family: dashicons;
+			vertical-align: middle;
+		}		 
+	
+				.bsp-home-icon::before
+			{
+			font-size:  12px ;
+			}	
+		
+				.bsp-home-icon::before
+			{
+				color:  12 ;
+			}	 
+
+		
+/*----------------------  topic lock icon-----------------------------------------------------------------------------------------------------*/
+
+		
+	
+.bbpresss_unread_posts_icon{
+	float:left;
+	margin-right:6px;
+	max-width: 45px;
+}
+
+.bbpresss_unread_posts_icon a img{
+	margin-top:2px;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+}
+
+.markedUnread{
+	float: right;
+}
+
+.bbpress_mark_all_read_wrapper{
+	transform: scale(0.8);
+	transform-origin: right;
+}
+
+.bbpress_mark_all_read{
+	display:inline-block;
+	margin-right:5px;
+	width: 100%;
+}
+
+.bbpress_mark_all_read input{
+	float:right;
+}
+
+.bbpress_mark_all_read input[type="submit"]{
+	margin:0px;
+}
+
+
+.bbpresss_unread_posts_amount{
+    float: right;
+    font-size: 9px;
+}
+
+#bsp_unread_optinout {
+	width : 10% !important;
+}
+
+.show-iconf::before {
+         font-family: 'dashicons' ;
+	content : "\f449";
+}
+
+.show-iconr::before {
+         font-family: 'dashicons' ;
+	content : "\f451";
+}
+
+.show-icont::before {
+         font-family: 'dashicons' ;
+	content : "\f450";
+}
+
+.show-iconv::before {
+         font-family: 'dashicons' ;
+	content : "\f307";
+}
+
+.show-iconlr::before {
+         font-family: 'dashicons' ;
+	content : "\f338";
+}
+
+.show-iconla::before {
+         font-family: 'dashicons' ;
+	content : "\f469";
+}
+
+	
+
+
+/*----------------------  custom css--------------------------*/
+	
+
+
+
+
+ 

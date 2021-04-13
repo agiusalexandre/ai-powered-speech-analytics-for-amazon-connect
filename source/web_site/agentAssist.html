@@ -132,6 +132,16 @@
             padding-bottom: 15px;
         }
 
+        #ccpTopContainer {
+            width: 330px;
+            height: 525px;
+            overflow: hidden;
+            float: top;
+            margin-left: 22px;
+            padding: 10px;
+            
+        }
+
         #ccpContainer {
             width: 330px;
             height: 525px;
@@ -386,6 +396,10 @@
 
     <script src="js/aws-sdk-2.597.0.min.js"></script>
     <script src="js/jquery.tipsy.js"></script>
+    <section id="ccpTopContainer">
+        <div>Centre d'appel intélligent SPB</div>
+        <img src="assets/spb_logo.png" style="width:65px;" id='imgCurrentSentimentChat'>
+    </section>
 
     <section id="ccpContainer">
         <div id="ccpContainer1">
@@ -410,7 +424,8 @@
                 var customerLanguage;
                 const fromLanguageDict = {
                     "en-US": "en",
-                    "es-US": "es"
+                    "es-US": "es",
+                    "fr-FR": "fr"
                 };
 
                 window.ccp = window.ccp || {};
@@ -779,6 +794,7 @@
                 };
 
                 function processText(text, isPartial, segID){
+                    console.log('---------------' + "processText -------- " + isPartial + '---------------')
                     var space = " ";
                     var language = customerLanguage;
 

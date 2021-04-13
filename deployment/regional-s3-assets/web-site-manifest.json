@@ -1,0 +1,31 @@
+{
+    "files": [
+        "agentAssist.html",
+        "assets/01_ico_emoji_angry.svg",
+        "assets/03_ico_emoji_meh.svg",
+        "assets/04_ico_emoji_neutral.svg",
+        "assets/06_ico_emoji_good.svg",
+        "assets/07_ico_emoji_fantastic.svg",
+        "assets/checkmark.png",
+        "assets/sync.svg",
+        "checkmark.png",
+        "css/copybutton.css",
+        "css/menuStyle.css",
+        "css/style.css",
+        "css/tipsy.css",
+        "index.html",
+        "js/amazon-connect-chat.js",
+        "js/aws-sdk-2.435.0.min.js",
+        "js/aws-sdk-2.597.0.min.js",
+        "js/clipboard.min.js",
+        "js/connect-streams.js",
+        "js/connectCCP.js",
+        "js/demo-common.js",
+        "js/jquery-3.1.0.min.js",
+        "js/jquery-ui.js",
+        "js/jquery.dataTables.min.js",
+        "js/jquery.tipsy.js",
+        "js/menu.js",
+        "js/progressbar.js"
+    ]
+}

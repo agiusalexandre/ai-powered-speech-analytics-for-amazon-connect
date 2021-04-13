@@ -23,20 +23,32 @@ exports.handler = (event, context, callback) => {
 
     let payload = "";
 
+
     if (event.eventType) {
-        payload ={
+        payload = {
             inputFileName: "keepWarm.wav",
             connectContactId: "12b87d2b-keepWarm",
             transcriptionEnabled: "false"
         };
     } else {
+
+        let language = "";
+        
+        if (event.Details.ContactData.Attributes.languageCode === "es-US") {
+            language = "es-US";
+        } else if (event.Details.ContactData.Attributes.languageCode === "en-US") {
+            language = "en-US";
+        } else {
+            language = "fr-FR";
+        }
+
         payload = {
             streamARN: event.Details.ContactData.MediaStreams.Customer.Audio.StreamARN,
             startFragmentNum: event.Details.ContactData.MediaStreams.Customer.Audio.StartFragmentNumber,
             connectContactId: event.Details.ContactData.ContactId,
             transcriptionEnabled: event.Details.ContactData.Attributes.transcribeCall === "true" ? true : false,
             saveCallRecording: event.Details.ContactData.Attributes.saveCallRecording === "false" ? false : true,
-            languageCode: event.Details.ContactData.Attributes.languageCode === "es-US" ? "es-US" : "en-US",
+            languageCode: language,
             // These default to true for backwards compatability purposes
             streamAudioFromCustomer: event.Details.ContactData.Attributes.streamAudioFromCustomer === "false" ? false : true,
             streamAudioToCustomer: event.Details.ContactData.Attributes.streamAudioToCustomer === "false" ? false : true
@@ -54,7 +66,7 @@ exports.handler = (event, context, callback) => {
         'InvokeArgs': JSON.stringify(payload)
     };
 
-    lambda.invokeAsync(params, function(err, data) {
+    lambda.invokeAsync(params, function (err, data) {
         if (err) {
             throw (err);
         } else {
@@ -72,6 +84,6 @@ exports.handler = (event, context, callback) => {
 function buildResponse() {
     return {
         // we always return "Success" for now
-        lambdaResult:"Success"
+        lambdaResult: "Success"
     };
 }

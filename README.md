@@ -1,5 +1,50 @@
-# AI Powered Speech Analytics for Amazon Connect
-todo
+# AI Powered Speech Analytics for Amazon Connect - FR Personnalization 
+
+Create your Amazon connect instance
+-> https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-get-started.html
+
+Prerequisites :
+-> Before you launch the CFN, you must have an existing Amazon Connect instance with the live media streaming feature activated
+->https://docs.aws.amazon.com/connect/latest/adminguide/enable-live-media-streams.html
+
+Deploy Stack :  https://solutions-reference.s3.amazonaws.com/ai-powered-speech-analytics-for-amazon-connect/latest/ai-powered-speech-analytics-for-amazon-connect.template
+-> REGION us-east-1
+
+Create number
+-> https://docs.aws.amazon.com/connect/latest/adminguide/contact-center-phone-number.html
+
+
+Upload FLows
+->
+
+Attach Phone Number to Flow
+->
+Authorize https://dp95po3q13k1c.cloudfront.net/ has Amazon connect origin
+-> cp /source/web_site_SPB ( add some custom FR source code)
+-> Update img
+Deploy the new SPB interface (aws s3 cp . s3://new-website-bucket-name-spbcc/CCP/ --recursive)
+Disable Geo restriction on CloudFront distribution
+
+Update lambda function source code ( add some custom FR source code )
+-> build artefacrs
+-> cd /deployment/regional-s3-assets
+-> export AWS_REGION=us-east-1 / aws lambda update-function-code --function-name  spbcc-kvsConsumerTrigger-8RGYHUM71U1V  --zip-file fileb://kvs_trigger.zip
+
+Update the lambda ARN in flows
+-> Update for the 2 contacts flow the new lambdas ARN references 
+
+Create intent Lex ( Bot FAQs )
+->
+
+you're ready to test, Let's go !
+
+
+Question 1
+
+Je souhaite déclarer mon sinistre, que dois-je faire ?
+Puis-je résilier quand je veux mon assurance ?
+Comment envoyer les documents justificatifs de mon sinistre ?
+
 
 ## Running unit tests for customization
 * Clone the repository, then make the desired code changes

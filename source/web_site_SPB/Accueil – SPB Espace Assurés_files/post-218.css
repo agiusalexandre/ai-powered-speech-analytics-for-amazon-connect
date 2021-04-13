@@ -1,0 +1,22 @@
+.elementor-218 .elementor-element.elementor-element-fee63ab > .elementor-container{min-height:90px;}.elementor-218 .elementor-element.elementor-element-fee63ab > .elementor-container:after{content:"";min-height:inherit;}.elementor-218 .elementor-element.elementor-element-fee63ab > .elementor-container > .elementor-row > .elementor-column > .elementor-column-wrap > .elementor-widget-wrap{align-content:center;align-items:center;}.elementor-218 .elementor-element.elementor-element-fee63ab{margin-top:20px;margin-bottom:20px;}.elementor-218 .elementor-element.elementor-element-51677078 > .elementor-element-populated{padding:0px 0px 0px 0px;}.elementor-218 .elementor-element.elementor-element-626bc0e .elementor-nav-menu--main{font-family:"Din Pro", Din Pro,Sans-serif;font-size:14px;font-weight:normal;}.elementor-218 .elementor-element.elementor-element-626bc0e .elementor-nav-menu--main .elementor-item{padding-left:0px;padding-right:0px;padding-top:5px;padding-bottom:5px;}body:not(.rtl) .elementor-218 .elementor-element.elementor-element-626bc0e .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:last-child){margin-right:10px;}body.rtl .elementor-218 .elementor-element.elementor-element-626bc0e .elementor-nav-menu--layout-horizontal .elementor-nav-menu > li:not(:last-child){margin-left:10px;}.elementor-218 .elementor-element.elementor-element-626bc0e .elementor-nav-menu--main:not(.elementor-nav-menu--layout-horizontal) .elementor-nav-menu > li:not(:last-child){margin-bottom:10px;}.elementor-bc-flex-widget .elementor-218 .elementor-element.elementor-element-4e511248.elementor-column .elementor-column-wrap{align-items:center;}.elementor-218 .elementor-element.elementor-element-4e511248.elementor-column.elementor-element[data-element_type="column"] > .elementor-column-wrap.elementor-element-populated > .elementor-widget-wrap{align-content:center;align-items:center;}.elementor-218 .elementor-element.elementor-element-4e511248 > .elementor-element-populated{padding:0px 0px 0px 0px;}.elementor-218 .elementor-element.elementor-element-a015491 .elementor-text-editor{text-align:right;}.elementor-218 .elementor-element.elementor-element-a015491{color:#333333;font-size:14px;}.elementor-218 .elementor-element.elementor-element-a015491 > .elementor-widget-container{margin:0px 0px 27px 0px;}@media(max-width:824px){.elementor-218 .elementor-element.elementor-element-fee63ab{padding:10px 20px 10px 20px;}.elementor-218 .elementor-element.elementor-element-626bc0e{width:auto;max-width:auto;}}@media(max-width:767px){.elementor-218 .elementor-element.elementor-element-fee63ab{padding:20px 20px 00px 20px;}}@media(min-width:768px){.elementor-218 .elementor-element.elementor-element-51677078{width:80%;}.elementor-218 .elementor-element.elementor-element-4e511248{width:20%;}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Din Pro';
+	font-style: normal;
+	font-weight: normal;
+	src: url('https://www.spb-assurance.fr/wp-content/uploads/2019/07/din-regular-webfont.woff2') format('woff2'),
+		url('https://www.spb-assurance.fr/wp-content/uploads/2019/07/din-regular-webfont.woff') format('woff');
+}
+@font-face {
+	font-family: 'Din Pro';
+	font-style: italic;
+	font-weight: normal;
+	src: url('https://www.spb-assurance.fr/wp-content/uploads/2019/07/din-regularitalic-webfont.woff2') format('woff2'),
+		url('https://www.spb-assurance.fr/wp-content/uploads/2019/07/din-regularitalic-webfont.woff') format('woff');
+}
+@font-face {
+	font-family: 'Din Pro';
+	font-style: normal;
+	font-weight: bold;
+	src: url('https://www.spb-assurance.fr/wp-content/uploads/2019/07/din-bold-webfont.woff2') format('woff2'),
+		url('https://www.spb-assurance.fr/wp-content/uploads/2019/07/din-bold-webfont.woff') format('woff');
+}
+/* End Custom Fonts CSS */
