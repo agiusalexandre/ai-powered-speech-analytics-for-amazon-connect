@@ -7,7 +7,7 @@ Prerequisites :
 -> Before you launch the CFN, you must have an existing Amazon Connect instance with the live media streaming feature activated
 ->https://docs.aws.amazon.com/connect/latest/adminguide/enable-live-media-streams.html
 
-Deploy Stack :  /deployment/AI-powered-speech-analytics-for-amazon-connect.yaml
+Deploy Stack :  https://solutions-reference.s3.amazonaws.com/ai-powered-speech-analytics-for-amazon-connect/latest/ai-powered-speech-analytics-for-amazon-connect.template
 -> REGION us-east-1
 
 Create number
